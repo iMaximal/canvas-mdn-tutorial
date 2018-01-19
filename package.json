@@ -1,0 +1,19 @@
+{
+  "name": "canvas-mdn-tutorial",
+  "version": "1.0.0",
+  "description": "start learning",
+  "main": "introduction/index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.15.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "canvas",
+    "mdn"
+  ],
+  "author": "Maksim Golitsyn",
+  "license": "MIT"
+}

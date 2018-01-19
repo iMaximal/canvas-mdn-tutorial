@@ -1,0 +1,41 @@
+# Cruft
+npm-debug.log
+.idea
+*sublime*
+backup
+
+# Logs
+logs
+*.log
+*.lock
+*.map
+
+# System Files
+.DS_Store
+._.DS_Store
+Thumbs.db
+
+# Dependency directory
+node_modules
+bower_components/
+
+# Linter
+linters
+
+# compiled output
+build
+Release
+dist
+dll
+.tmp
+documentation/*.html
+manifest
+
+# misc
+.env
+
+# Don't check auto-generated stuff into git
+stats.json
+
+# testing
+coverage

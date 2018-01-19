@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>The <canvas> element</title>
+    <meta name="description" content="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage">
+</head>
+<body>
+
+<canvas id="tutorial" width="150" height="150"></canvas>
+
+<!--<canvas id="stockGraph" width="150" height="150">-->
+  <!--current stock price: $3.15 + 0.15-->
+<!--</canvas>-->
+
+<script>
+
+  var canvas = document.getElementById('tutorial');
+
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+    // drawing code here
+  } else {
+    // canvas-unsupported code here
+  }
+
+</script>
+
+</body>
+</html>
