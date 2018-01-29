@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Canvas tutorial</title>
+  <script src="miniData.js"></script>
+
+  <script type="text/javascript">
+    console.log(miniData);
+    function draw() {
+      const canvas = document.getElementById('canvas');
+
+      if (canvas.getContext) {
+        const ctx = canvas.getContext('2d');
+
+        // Stroked line chart
+
+        for (let i = 0; i < miniData.length - 1; i++) {
+          ctx.strokeStyle = '#35ccc1';
+          ctx.lineWidth = 2;
+          ctx.beginPath();
+
+          // minus min value (X)
+          const xCoord1 = Number(miniData[i].time) - 1448910000000
+          ctx.moveTo(xCoord1, 10000 * (Number(miniData[i]['10:Hz']) - 50))
+
+          ctx.lineTo(Number(miniData[i+1].time) - 1448910000000, 10000 * (Number(miniData[i+1]['10:Hz']) - 50))
+          ctx.stroke();
+        }
+
+      }
+    }
+  </script>
+
+  <style type="text/css">
+    canvas { border: 1px solid black; }
+  </style>
+</head>
+
+<body onload="draw();">
+
+  <canvas id="canvas" width="1800" height="600">
+    canvas-unsupported
+  </canvas>
+
+</body>
+
+</html>
